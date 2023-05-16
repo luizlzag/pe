@@ -1,0 +1,15 @@
+.cart button{
+    border: none;
+    background-color:transparent;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+.cart button:hover{
+    color: white;
+    opacity: 1;
+}

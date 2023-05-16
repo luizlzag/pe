@@ -1,0 +1,54 @@
+.products_container{
+    border-radius: var(--border-radius);
+    border: 2px solid grey;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    justify-content:space-between;
+    padding: 1rem;
+    cursor: pointer;
+  
+  }
+  .card:hover{
+    background-color: #ffffff;
+  }
+  .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.2rem;
+    width: 35ch;
+    font-size: 0.9rem;
+    opacity: 0.8;
+
+  }
+  .description span{
+    color: white;
+    background-color: red;
+    padding: 0 1rem;
+    border-radius: 4px;
+  }
+  .add button{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+  }
+  .add button:hover{
+    color: green;
+  }
+  .infprod{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction: row;
+  }
+  .infprod p{
+    justify-content: center;
+    padding:0 0.3rem;
+    opacity: 0.8;
+    font-size: 0.8rem;
+  }
+
