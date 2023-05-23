@@ -1,7 +1,7 @@
 'use client';
 import styles from './page.module.css';
 import React, { useState, useEffect } from 'react';
-import getProducts from '@/api/fetchProducts';
+import getProducts from '@/api/getProducts';
 import { formatCurrency } from '@/utils/formatCurrency';
 import {IoAddCircleOutline} from 'react-icons/io5';
 
