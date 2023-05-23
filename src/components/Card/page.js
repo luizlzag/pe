@@ -1,7 +1,7 @@
 'use client';
 import styles from './page.module.css';
 import React, { useState, useEffect } from 'react';
-import getProducts from '@/api/fetchProducts';
+import getProducts from '@/api/getProducts';
 import { formatCurrency } from '@/utils/formatCurrency';
 import {IoAddCircleOutline} from 'react-icons/io5';
 
@@ -10,20 +10,7 @@ export default async function Card() {
 
   /*const query = '';*/
 
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const data = await getProducts();
-        setProducts(data);
-      } catch (error) {
-        console.error('Error fetching products:', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+  const products = getProducts();
 
   return (
     <>
