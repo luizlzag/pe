@@ -1,8 +1,8 @@
-import Card from '@/components/Card/page';
 import styles from './page.module.css';
 import {FaSearch} from 'react-icons/fa';
 import Cart from '@/components/Cart/page';
 import React from 'react';
+import Card from '@/components/Card/page';
 
 
 export default function Home() {

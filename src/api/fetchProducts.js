@@ -1,9 +1,7 @@
-const fetchProducts = async (query) =>{
-
-  const response = await fetch(`https://api.mercadolibre.com/sites/MLB/search?q=${query}`);
-  const data = await response.json();
-  
-  return data.results;
+import axios from 'axios';
+const getProducts = async () =>{
+  const response = await axios.get('http://localhost:2469/products');
+  return response.data.results;
 };
-export default fetchProducts;
+export default getProducts;
   

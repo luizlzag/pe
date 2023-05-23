@@ -1,16 +1,17 @@
-.products_container{
-    border-radius: var(--border-radius);
-    border: 2px solid grey;
+.card{
     display: flex;
-    flex-direction:row;
     align-items: flex-end;
-    justify-content:space-between;
+    justify-content: space-between;
+    background-color: white;
     padding: 1rem;
     cursor: pointer;
-  
+    width: 100%;
   }
   .card:hover{
-    background-color: #ffffff;
+    box-shadow: 0 0 5px 5px rgba(165, 80, 80, 0.479);
+  }
+  .card:hover .add button{
+    color: green;
   }
   .description{
     display: flex;
@@ -19,23 +20,25 @@
     align-items: flex-start;
     text-align: left;
     gap: 0.2rem;
-    width: 35ch;
+    width: 30ch;
     font-size: 0.9rem;
     opacity: 0.8;
+    
 
   }
   .description span{
     color: white;
     background-color: red;
     padding: 0 1rem;
-    border-radius: 4px;
+    border-radius: 2px;
+  }
+  .add{
+    display:flex;
+    align-items:flex-end;
   }
   .add button{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    border: none;
     background-color: transparent;
+    border: none;
   }
   .add button:hover{
     color: green;
